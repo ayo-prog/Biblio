@@ -1,0 +1,57 @@
+---
+title: "Biblio_Health_HIS"
+author: "Gloria"
+date: "2022-11-07"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Supporting document for Health information system and health care applications performance in the healthcare arena: a bibliometric analysis.
+
+### The detail Research Method. 
+
+####Phase one 
+##### Search string search on Web of Science.
+
+The first phase is the development of search string that is used on an online database namely Web of Science. The search string used was ***"Health Information Systems" OR "HIS" AND "Healthcare" OR "Health care" AND "Application" OR "Applications"***.
+Results from the search was refined to fit within the selection criteria. 
+**Inclusion criteria** This included; a year range of 2013 to 2022, health related categories, English-language, and type of documents was limited to article, reviews and conference proceedings. 
+**Exclusion criteria** For the exclusion criteria, selected publication that were not in English-Language and did not fit the document type and context was eliminated.  
+
+Search link used to obtain data <https://www.webofscience.com/wos/woscc/summary/20ec5b13-be5c-48f9-9fcf-ca9fb3a673cb-4e48f31f/relevance/1>
+
+####Phase Two 
+##### Preprocessing and conversion of data. 
+
+Downloaded data was combined and preprocess to an acceptable format for the analysis using R studio and the bibliometric. 
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>. When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+####Phase Three 
+
+Initiate and conduct analysis with the code bellow. 
+The bibliometrix package in R provide a graphical interface after running the code and results are obtained from the web interface of the bibliometrix package with the biblioshiny function
+
+```{r}
+install.packages("bibliometrix")
+
+library("bibliometrix")
+
+biblioshiny()
+
+```
+####Phase Four
+Upload data and run the analysis on the web interface launched after the execution of the above code chunk.
+
+
+## Conclusion
+More detail code on bibliometric analysis with R can be found in the GitHub link provided below.
+
+<https://www.bibliometrix.org/vignettes/Introduction_to_bibliometrix.html>
+
+A resource for bibliometric analysis in R GitHub - massimoaria/bibliometrix: An R-tool for comprehensive science mapping analysis. A package for quantitative research in scientometrics and bibliometrics>
+
+
